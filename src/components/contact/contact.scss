@@ -1,0 +1,198 @@
+@import '../../app.scss';
+
+.contact{
+    height: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include mobile {
+        width: 100%;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    @include iphone {
+        width: 100%;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    @include surfaceDuo{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    @include tablet{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    @include desktop{
+        margin-left: 50px;
+    }
+
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile {
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include iphone {
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @include surfaceDuo {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        @include tablet {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        h1{
+            font-size: 70px;
+            line-height: 88px;
+
+            @include iphone {
+                font-size: 35px;
+            }
+
+            @include mobile {
+                font-size: 36px;
+            }
+
+            @include surfaceDuo{
+                font-size: 36px;
+            }
+        }
+
+        span{
+            font-weight: 300;
+        }
+    }
+
+    .formContainer{ 
+        flex: 1;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+            padding: 5px;
+        }
+        @include iphone {
+            width: 100%;
+            padding: 5px;
+        }
+
+        @include surfaceDuo{
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include tablet{
+            width: 70%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include desktop{
+            margin-right: 50px;
+            margin-top: 40px;
+        }
+
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            .svg{
+                height: 400px;
+                width: 400px;
+
+                @include mobile{
+                    height: 200px;
+                    width: 200px;
+                    position: relative;
+                    top: 60px;
+                    left: 80px;
+                }
+                @include iphone{
+                    height: 200px;
+                    width: 200px;
+                    position: relative;
+                    top: 60px;
+                    left: 80px;
+                }
+
+                @include surfaceDuo{
+                    height: 200px;
+                    width: 200px;
+                    position: relative;
+                    top: 60px;
+                    left: 150px;
+                }
+            }
+
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,textarea{
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+                @include mobile{
+                    padding-top:10px
+                }
+                @include iphone{
+                    padding-top:10px
+                }
+            }
+            
+            button{
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+
+                @include mobile {
+                    padding: 10px;
+                }
+                @include iphone {
+                    padding: 10px;
+                }
+            }
+        }
+
+        
+    }
+}

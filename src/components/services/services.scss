@@ -1,0 +1,74 @@
+@import '../../app.scss';
+
+.self{
+    position: absolute;
+    height: 100vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    .intro{
+        margin-top: 6%;
+        height: 15%;
+        font-size: large;
+        font-size: 22px;
+    }
+
+    .ed_qual{
+        height: 8vh;
+        margin-top: 4%;
+        h1{
+            color: #F88379;
+        }
+        h4{
+            margin-top: 0.25%;
+        }
+    }
+    .tech_stack{
+
+        margin-top: 5%;
+        height: 15vh;
+        
+        h2{
+            color: #F88379;
+        }
+        .img_container{
+            display: flex;
+            gap: 2.5%;
+            margin-top: 2%;
+            img{
+                height: 10%;
+                width: 7%;
+            }
+            .jslogo{
+                border-radius: 50%;
+                background-color: red;
+            }
+            .react{
+                height: 14%;
+                width: 10%;
+                margin-top: 2%;
+            }
+            .framer{
+                height: 7%;
+                width: 7%;
+                margin-top: 1%;
+            }
+            .bslogo{
+                margin-top: 1%;
+            }
+            .tailwind{
+                margin-top: 2%;
+            }
+        }
+    }
+    .button{
+        padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 400;
+                    margin-top: 7%;
+    }
+}

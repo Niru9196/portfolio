@@ -1,0 +1,165 @@
+@import "../../app.scss";
+
+.hero{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg , #0c0c1d , #111132);
+    overflow: hidden;
+    position: relative;
+
+    .wrapper{
+        max-width: 1100px;
+        height: 100%;
+        margin: auto;
+
+        .textContainer{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+            @include iphone {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                margin-top: 50px;
+            }
+            @include surfaceDuo {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+
+            }
+            @include tablet{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                margin-top: 150px;
+            }
+
+            @include desktop{
+                margin-left: 60px;
+            }
+
+
+            h2{
+                font-size: 30px;
+                color: rebeccapurple;
+                letter-spacing: 10px;
+
+                @include tablet{
+                    font-size: 35px;
+                }
+            }
+
+            h1{
+                font-size: 58px;
+
+                @include mobile{
+                    font-size: 30px;
+                }
+                @include iphone{
+                    font-size: 30px;
+                }
+                @include surfaceDuo{
+                    font-size: 30px;
+                }
+                @include tablet{
+                    font-size: 35px;
+                }
+                @include desktop{
+                    font-size: 35px;
+                }
+            }
+
+            // .buttons{
+            //     // button{
+            //     //     padding: 20px;
+            //     //     border: 1px solid white;
+            //     //     border-radius: 10px;
+            //     //     background-color: transparent;
+            //     //     color: white;
+            //     //     margin-right: 20px;
+            //     //     cursor: pointer;
+            //     //     font-weight: 400;
+
+            //     //     @include tablet{
+            //     //         font-size: 20px;
+            //     //         margin-top: 50px;
+            //     //     }
+            //     // }
+            // }
+
+            img{
+                width: 50px;
+
+                @include tablet{
+                   margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .imageContainer{
+        position: absolute;
+        height: 100%;
+        top: 12%;
+        right: 13%;
+
+        @include mobile{
+            height: 50%;
+            width: 90%;
+            top: unset;
+            bottom: 0;
+        }
+        
+        @include iphone{
+            height: 50%;
+            width: 90%;
+            top: 400px;
+        }
+        @include surfaceDuo{
+            height: 60%;
+            width: 100%;
+            top: 400px;
+        }
+
+        @include tablet {
+            height: 50%;
+            width: 100%;
+            top: 700px;
+        }
+
+        img{
+            width: 100%;
+            height:100% ;
+            object-fit: contain;
+        }
+    }
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -100px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    
+}
